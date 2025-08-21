@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: saikumarnerella90/user:latest
+        image: kumkammontej/user:latest
         ports:
         - containerPort: 5001
 ---

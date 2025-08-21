@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        REGISTRY = "saikumarnerella90"
+        REGISTRY = "kumkammontej"
         IMAGE_TAG = "${env.BUILD_NUMBER}"   // Version-wise tag
         KUBECONFIG_PATH = "${WORKSPACE}/kubeconfig"
     }

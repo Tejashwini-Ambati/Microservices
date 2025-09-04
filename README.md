@@ -3,7 +3,7 @@
 ---
 
 ## Project Structure
-
+``` 
 microservices/
 ├── services/
 │   ├── auth/
@@ -17,8 +17,7 @@ microservices/
 │   ├── user-deployment.yaml
 │
 └── Jenkinsfile
-
-
+``` 
 
 Each service has its own *Dockerfile* and *Kubernetes deployment YAML*.
 

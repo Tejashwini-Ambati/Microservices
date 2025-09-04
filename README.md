@@ -4,7 +4,6 @@
 
 ## Project Structure
 
-
 microservices/
 ├── services/
 │   ├── auth/

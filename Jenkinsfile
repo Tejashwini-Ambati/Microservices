@@ -42,7 +42,7 @@ pipeline {
                             echo "Deploying ${service}"
 
                             # Update image in Kubernetes manifest
-                            sed -i 's|image: ${REGISTRY}/${service}:.*|image: ${REGISTRY}/${service}:${IMAGE_TAG}|' k8s-manifests/${service}-deployment.yaml
+                            sed -i 's|image: ${REGISTRY}/${service}:.*|image: ${REGISTRY}/${service}:${IMAGE_TAG}|' k8smanifests/${service}-deployment.yaml
 
                             # Apply manifest
                             kubectl --kubeconfig="${KUBECONFIG}" apply -f k8s-manifests/${service}-deployment.yaml

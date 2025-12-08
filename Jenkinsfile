@@ -45,7 +45,7 @@ pipeline {
                             sed -i 's|image: ${REGISTRY}/${service}:.*|image: ${REGISTRY}/${service}:${IMAGE_TAG}|' k8smanifests/${service}-deployment.yaml
 
                             # Apply manifest
-                            kubectl --kubeconfig="${KUBECONFIG}" apply -f k8s-manifests/${service}-deployment.yaml
+                            kubectl --kubeconfig="${KUBECONFIG}" apply -f k8smanifests/${service}-deployment.yaml
 
                             # Wait for rollout
                             kubectl --kubeconfig="${KUBECONFIG}" rollout status deployment/${service}-deployment

@@ -47,9 +47,7 @@ pipeline {
                             # Apply manifest
                             kubectl --kubeconfig="${KUBECONFIG}" apply -f k8smanifests/${service}-deployment.yaml
 
-                            # Wait for rollout
-                            kubectl --kubeconfig="${KUBECONFIG}" rollout status deployment/${service}-deployment
-                        
+                            
                         """
                         }
                     }

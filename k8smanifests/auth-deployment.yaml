@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: auth
-        image: kumkammontej/auth:latest   # Jenkins will push here
+        image: kumkammonteju/auth:latest   # Jenkins will push here
         ports:
         - containerPort: 5000
 ---

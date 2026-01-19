@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: auth-service
 spec:
-  clusterIP: None   # <-- important for EKS
+  clusterIP: None        # makes it headless
   selector:
     app: auth
   ports:

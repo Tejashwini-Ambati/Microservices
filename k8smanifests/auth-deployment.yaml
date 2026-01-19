@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: auth-service
 spec:
-  type: LoadBalancer   # <-- important for EKS
+  type: cluster IP   # <-- important for EKS
   selector:
     app: auth
   ports:

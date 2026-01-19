@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: auth-service
 spec:
-  type: ClusterIP   # <-- important for EKS
+  clusterIp: None   # <-- important for EKS
   selector:
     app: auth
   ports:

@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: user-service
 spec:
-  type: LoadBalancer   # <-- exposes via AWS ELB
+  type: cluster IP # <-- exposes via AWS ELB
   selector:
     app: user
   ports:

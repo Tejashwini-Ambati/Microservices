@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: user-service
 spec:
-  type: ClusterIP # <-- exposes via AWS ELB
+  clusterIp: None  # <-- exposes via AWS ELB
   selector:
     app: user
   ports:

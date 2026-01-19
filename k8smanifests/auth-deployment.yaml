@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: auth-service
 spec:
-  clusterIP: None        # makes it headless
+  type: LoadBalancer
   selector:
     app: auth
   ports:
